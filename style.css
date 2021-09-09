@@ -1,0 +1,241 @@
+/*le titre*/
+h1 {
+    color: orangered;
+    text-align: center;
+    border-color: orangered;
+    margin: 0px 280px 20px 280px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 14px;
+   
+}
+
+h1:hover {
+    background:orangered;
+    opacity: 80%;
+    color: #fff;
+    border-radius: 5px 5px 5px 5px; 
+}
+/* fin le titre*/
+	
+/* image anime*/
+.anim_pro_auto{
+margin:2rem auto;
+width:420px;
+height:279px;
+perspective:8000px
+	
+	}
+		
+.anim-image{
+	
+animation:rotation 24s infinite alternate linear;	
+transform-style:preserve-3d;
+position:relative;	
+
+}
+
+.anim-image img{
+	
+  position: absolute;
+  top:0;
+  left: 0;	
+	
+	}
+		
+.anim-image img{
+	
+  filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+  width:400px;
+  height:266px;
+  left:10px;
+  outline:1px solid transparent;
+  backface-visibility:hidden;
+    
+	}
+		
+ .anim-image img:nth-child(1){
+	
+transform:translate3d(0,0,495px)
+		
+		}
+		
+.anim-image img:nth-child(2){
+	
+transform:rotateY(45deg) translateZ(495px)
+	
+		}
+		
+.anim-image img:nth-child(3){
+	
+	transform:rotateY(90deg) translateZ(495px)
+	
+	}
+	
+.anim-image img:nth-child(4){
+	
+	transform:rotateY(135deg) translateZ(495px)
+	
+	}
+	
+.anim-image img:nth-child(5){
+	
+	transform:rotateY(180deg) translateZ(495px)
+	
+	}
+	
+.anim-image img:nth-child(6){
+	
+	transform:rotateY(225deg) translateZ(495px)
+	
+	}
+	
+.anim-image img:nth-child(7){
+	
+	transform:rotateY(270deg) translateZ(495px)
+	
+	}
+	
+.anim-image img:nth-child(8){
+	
+	transform:rotateY(315deg) translateZ(495px)
+	
+	}  
+
+   @keyframes rotation{
+from{transform:rotatey(0)}
+to{transform:rotatey(2turn)}
+}
+/* fin image anime*/
+/* footer*/
+.piedpage:hover {
+    color: #fff;
+}
+
+  
+
+ /* zone de saissi */ 
+.tasker {
+    background-color: transparent;
+    max-width: 500px;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    border-radius: 10px;
+  }
+.tasker .error {
+    display: none;
+    background: #ff0000;
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+.tasker ul {
+    background: #fff;
+  }
+  /*fin zone de saissi */ 
+  /* bloc todo */ 
+.todo-header {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 100px 280px 0px 0px;
+    display: block;
+    width: 95%;
+    height: 120px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0px 5px;
+  }
+  /* fin bloc todo */
+  /* bloc todo input */
+.todo-header input {
+    display: block;
+    width: 95%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 14px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0px 5px;
+  }
+  /* button ajouter tache */
+.todo-header button {
+   display: block;
+    width: 40%;
+    height: 40px;
+    margin: 0px 0px 0px 220px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 14px;
+    outline: none;
+    background: orangered;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.todo-header button:hover {
+    box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc ;
+    opacity: 0.7;
+  } 
+  
+.todo-header button span {
+  border: 1px solid #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+}
+/* fin button ajouter tache */
+/* bloc liste des tache */
+.toto {
+    background: #fff;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+/* liste des tache */
+.todo-lists .task {
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px ;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 5px;
+    width: 95%;
+    box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  }
+  /* tache complete */
+.todo-lists .task.completed {
+    border: solid rgb(245, 98, 0);
+    display: inline-block;
+    color: #3f3e3e;
+    text-decoration: line-through;
+  }
+  /* button suprimer */
+.todo-lists .task button {
+    display: block;
+    float: right;
+    color: #cdcdcd;
+    background: rgb(245, 98, 0);
+    width: 20px;
+    height: 18px;
+    border-radius: 5px;
+  }
+.todo-lists .task button:hover {
+    background: rgb(255, 0, 0);
+    color: #fff;
+  }
+	/* fin button suprimer */
+  
+  
